@@ -1,0 +1,44 @@
+/* src/components/ImageGallery.css */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-image-container {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.main-image {
+    display: block;
+    width: 100%;
+    max-height: 500px; /* Limita altura máxima */
+    object-fit: contain; /* Muestra imagen completa, puede dejar espacios */
+    /* object-fit: cover; */ /* Cubre el área, puede recortar */
+}
+
+.thumbnail-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las miniaturas se envuelvan */
+    gap: 8px;
+}
+
+.thumbnail-image {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+}
+
+.thumbnail-image:hover {
+    border-color: #ccc;
+}
+
+.thumbnail-image.active {
+    border-color: #007bff;
+}

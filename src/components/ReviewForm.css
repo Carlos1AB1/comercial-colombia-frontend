@@ -1,0 +1,17 @@
+/* src/components/ReviewForm.css */
+.review-form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    margin-bottom: 30px; /* Espacio antes de la lista de reseñas */
+}
+
+.review-form h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.rating-group .star-input {
+    display: inline-block; /* O flex */
+}

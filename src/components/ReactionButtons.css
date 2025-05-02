@@ -1,0 +1,62 @@
+/* src/components/ReactionButtons.css */
+.reaction-buttons {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    align-items: center; /* Alinea botones y mensaje de error */
+}
+
+.reaction-button {
+    padding: 8px 12px;
+    font-size: 1em;
+    border-radius: 20px; /* Botones redondeados */
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.reaction-button .count {
+    font-weight: bold;
+    font-size: 0.9em;
+    background-color: rgba(0,0,0,0.05);
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+
+.reaction-button.like-button {
+    border-color: #28a745; /* Verde */
+    color: #28a745;
+}
+.reaction-button.like-button:hover:not(:disabled) {
+    background-color: #e9f5ec;
+}
+.reaction-button.like-button.reacted {
+    background-color: #28a745;
+    color: white;
+}
+
+
+.reaction-button.dislike-button {
+    border-color: #dc3545; /* Rojo */
+    color: #dc3545;
+}
+.reaction-button.dislike-button:hover:not(:disabled) {
+    background-color: #f8d7da;
+}
+.reaction-button.dislike-button.reacted {
+    background-color: #dc3545;
+    color: white;
+}
+
+.reaction-button.submitting {
+    opacity: 0.7;
+}
+
+/* Estilo opcional para el mensaje de error dentro del contenedor */
+.reaction-buttons .error-message {
+    margin: 0; /* Resetear margen */
+    padding: 5px 10px;
+    font-size: 0.9em;
+    flex-grow: 1; /* Ocupa espacio si hay */
+    text-align: left;
+}

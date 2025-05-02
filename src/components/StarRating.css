@@ -1,0 +1,25 @@
+/* src/components/StarRating.css */
+.star-rating {
+    color: #ccc; /* Color de estrellas vacías */
+    font-size: 1.2em; /* Tamaño de las estrellas */
+}
+
+.star {
+    cursor: default; /* Cursor normal para visualización */
+    transition: color 0.2s ease;
+}
+
+.star.filled {
+    color: #ffc107; /* Color de estrellas llenas (dorado/amarillo) */
+}
+
+/* Estilos para cuando se usa como input en el formulario */
+.star-input .star {
+    cursor: pointer;
+    font-size: 1.5em; /* Estrellas más grandes para input */
+}
+.rating-value-display {
+    font-size: 0.8em;
+    margin-left: 10px;
+    color: #666;
+}
